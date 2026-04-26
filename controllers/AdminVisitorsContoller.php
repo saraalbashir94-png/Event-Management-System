@@ -1,0 +1,17 @@
+<?php
+// 1. نربط بملف قاعدة البيانات
+require_once "../config/db_connection.php"; 
+
+if (isset($_GET['delete_id'])) {
+    $id = $_GET['delete_id'];
+
+    $sql = "DELETE FROM user WHERE id = $id";
+
+    if (mysqli_query($conn, $sql)) {
+        header("Location: ../views/pages/admin_visitors.php?status=success");
+        exit();
+    } else {
+        echo "Error deleting record: " . mysqli_error($conn);
+    }
+}
+?>

@@ -15,7 +15,7 @@
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero.png');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../assets/images/hero.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -172,7 +172,7 @@
         
         <div class="workshops-grid">
             <div class="workshop-card">
-                <img src="assets/images/ai1.png" alt="Workshop">
+                <img src="../../assets/images/hero.png" alt="Workshop">
                 <div class="card-body">
                     <h3>Introduction to AI</h3>
                     <div class="instructor-name">Eng. Sarah Ahmed</div>
