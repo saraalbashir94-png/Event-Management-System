@@ -32,12 +32,11 @@
     $navType = "admin";
     include("../components/navbar.php"); 
     ?>
-
     <div class="form-container">
         <a href="admin_workshops.php" class="back-btn">← Back to Dashboard</a>
         <h2>Create New Workshop</h2>
         
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="../../controllers/WorkshopsController.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Workshop Title</label>
                 <input type="text" name="title" placeholder="e.g. AI for Designers" required>
